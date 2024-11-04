@@ -24,8 +24,8 @@ a.active hr{
 }
 
   :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: rgb(213, 250, 139);
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 234, 212);
   }
 
   /* Sidebar menu for small screens item  */

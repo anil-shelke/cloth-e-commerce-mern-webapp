@@ -9,9 +9,8 @@
 }
 
 :root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #575757;
-
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 224, 252);
 }
 
 .active{

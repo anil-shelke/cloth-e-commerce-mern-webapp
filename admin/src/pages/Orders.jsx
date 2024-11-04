@@ -64,7 +64,7 @@ const Orders = ({ token }) => {
                   {
                     order.items.map((item, index) => {
                       if (index === order.items.length - 1) {
-                        return <p className='text-white py-0.5' key={index}>{item.name} x {item.quntity} <span>{item.size}</span></p>
+                        return <p className=' py-0.5' key={index}>{item.name} x {item.quntity} <span>{item.size}</span></p>
                       }
                       else {
                         return <p className='py-0.5' key={index}>{item.name} x {item.quntity} <span>{item.size} ,</span></p>
