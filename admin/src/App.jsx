@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Add from './pages/Add'
 import Orders from './pages/Orders'
-import List from './pages/list'
+import List from './pages/List.js'
 import Sidebar from './components/Sidebar'
 import Login from './pages/Login'
 import { ToastContainer } from 'react-toastify';
