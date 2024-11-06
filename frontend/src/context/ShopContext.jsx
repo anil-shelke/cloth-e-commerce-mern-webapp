@@ -141,6 +141,7 @@ const ShopContextProvider = (props) => {
         try {
             
             const response = await axios.post(backendUrl + '/api/cart/get', {}, {headers:{token}})
+            console.log(response)
 
             if(response.data.success){
                 setCartItems(response.data.cartData)
