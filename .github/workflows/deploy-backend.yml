@@ -3,7 +3,7 @@ name: Deploy Backend
 on:
   push:
     branches:
-      - main
+      - cicddockerDeploy
 
 jobs:
   deploy:
@@ -11,21 +11,22 @@ jobs:
 
     steps:
 
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@master
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@master
 
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ubuntu
-        key: ${{ secrets.EC2_SSH_KEY }}
-        script: |
-          cd ~/backend
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
 
-          git pull origin main
+          script: |
+            cd ~/cloth-e-commerce-mern-webapp/backend
 
-          docker compose down
+            git pull origin cicddockerDeploy
 
-          docker compose up -d --build
+            docker compose down
+
+            docker compose up -d --build
