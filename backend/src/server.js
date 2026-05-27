@@ -30,7 +30,7 @@ app.use('/api/cart',cartRouter)
 app.use('/api/order',orderRouter)
 
 app.get('/',(req,res)=>{
-    res.send("hello api is working with cicd");
+    res.send("hello api is working");
 })
 
 app.listen(port, ()=>{
