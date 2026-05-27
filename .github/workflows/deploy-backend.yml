@@ -3,7 +3,7 @@ name: Deploy Backend
 on:
   push:
     branches:
-      - cicddockerDeploy
+      - main
 
 jobs:
   deploy:
@@ -25,7 +25,7 @@ jobs:
           script: |
             cd ~/cloth-e-commerce-mern-webapp/backend
 
-            git pull origin cicddockerDeploy
+            git pull origin main
 
             docker compose down
 
