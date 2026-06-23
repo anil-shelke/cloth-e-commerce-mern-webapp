@@ -14,7 +14,7 @@ const loginUser = async (req, res) => {
 
     try {
         const {email, password} = req.body;
-        // console.log(email, password)
+        console.log(email);
     
         if([email, password].some((field) => field?.trim() === "")){
             return res.json({success:false, message:"email and password are required"})
